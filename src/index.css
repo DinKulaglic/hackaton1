@@ -1,13 +1,80 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Inconsolata", monospace !important;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("./assets/img/bg.png");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.launch-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.launch-toggle-button {
+  border-radius: 50%;
+  color: white;
+  background: black;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+.launch-counter {
+  font-size: 24px;
+  color: white;
+}
+
+.launch-picture {
+  max-height: 500px;
+  border-radius: 16px;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+.launch-random-button {
+  background: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 16px;
+  font-size: 24px;
+}
+
+.launch-random-button:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+.border-black {
+  border: 2px solid black;
+}
+
+@media (min-width: 320px) {
+  .launch-toggle-button {
+    width: 45px;
+    height: 45px;
+  }
+  .launch-random-button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 961px) {
+  .launch-toggle-button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .launch-random-button {
+    width: 40%;
+  }
+}
+
+.error-text {
+  color: white;
 }
